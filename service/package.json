@@ -1,0 +1,20 @@
+{
+  "name": "srl-service",
+  "version": "0.0.1",
+  "description": "Smart Resources List Service Core",
+  "main": "server.js",
+  "repository": "https://github.com/kataware-doki/srl",
+  "author": "@kataware-doki",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-preset-es2017": "^6.24.1",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node --presets @babel/preset-env"
+  }
+}
