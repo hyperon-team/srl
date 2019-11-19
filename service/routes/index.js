@@ -1,5 +1,6 @@
 import servers from './servers';
 
-export default ({ app }) => {
-  app.use('/servers', servers);
+export default server => {
+  const { app } = server;
+  app.use('/servers', servers(server));
 };

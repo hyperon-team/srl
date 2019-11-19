@@ -1,11 +1,13 @@
 import express from 'express';
 import routes from './routes';
+import db from './lib/db';
 
 const server = {
   app: express(),
   config: {
     port: 8000,
   },
+  db,
 };
 
 const { app, config } = server;
