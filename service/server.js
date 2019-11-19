@@ -1,17 +1,17 @@
-import express from 'express'
-import routes from './routes.js'
+import express from 'express';
+import routes from './routes';
 
-global.server = {
+const server = {
   app: express(),
   config: {
     port: 8000,
-  }
-}
+  },
+};
 
-const {app, config} = global.server
+const { app, config } = server;
 
-routes(global.server)
+routes(server);
 
 app.listen(config.port, () => {
-  console.log(`Server Started on ${config.port} port`)
-})
+  console.log(`Server Started on ${config.port} port`);
+});
