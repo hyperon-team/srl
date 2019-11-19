@@ -46,7 +46,7 @@ router.put('/:id', (req, res) => {
   // Check description if needed
 
   // Getting guild invite
-  const { invite } = guild;
+  // const { invite } = guild; // Todo: uncomment when done
   request
     .get(`https://discordapp.com/api/v6/invites/${invite}`)
     .then(body => JSON.parse(body))
